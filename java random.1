@@ -1,0 +1,19 @@
+import java.util.Random;
+
+public class RandomExample {
+    public static void main(String[] args) {
+        Random rand = new Random();
+
+        // Generate a random integer from 0 (inclusive) to 100 (exclusive)
+        int randomInt = rand.nextInt(100); 
+        
+        // Generate a random double between 0.0 (inclusive) and 1.0 (exclusive)
+        double randomDouble = rand.nextDouble(); 
+        
+        // Generate a random boolean (true or false)
+        boolean randomBoolean = rand.nextBoolean(); 
+
+        System.out.println("Random Integer (0-99): " + randomInt);
+        System.out.println("Random Double (0.0-1.0): " + randomDouble);
+        System.out.println("Random Boolean: " + randomBoolean);
+    }
